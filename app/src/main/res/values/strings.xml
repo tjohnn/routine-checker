@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Routine Checks</string>
+    <string name="next_up">Next Up</string>
+    <string name="all">All</string>
+    <string name="routines">Routines</string>
+    <string name="new_routine">New Routine</string>
+</resources>

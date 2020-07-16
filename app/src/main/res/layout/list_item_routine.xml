@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <TextView android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        tools:text="Under water "
+        app:layout_constraintEnd_toStartOf="@id/time_text"
+        />
+
+    <TextView android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Today 2:15pm"
+        />
+
+    <TextView android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/time_text"
+        android:layout_marginTop="12dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="HackerRank provides programming challenges to test candidates on their specific programming skills and and and better understand their qualification for a certain role. Candidate's challenges, once submitted, are auto-scored."
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
