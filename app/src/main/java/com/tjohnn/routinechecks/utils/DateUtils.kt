@@ -8,13 +8,13 @@ import java.util.*
 
 
 /**
- * Computes the next time for routine to be carried out based on frequency
+ * Computes the next time for routine to be carried out based on frequency and current time
  */
 fun computeNextRoutineTimeFromNow(routine: Routine): Calendar {
     val calendar = Calendar.getInstance()
     when (routine.duration) {
         RoutineDuration.HOURLY -> {
-            calendar.add(Calendar.MINUTE, routine.frequency)
+            calendar.add(Calendar.HOUR, routine.frequency)
         }
         RoutineDuration.DAILY -> {
             calendar.add(Calendar.DAY_OF_MONTH, routine.frequency)
