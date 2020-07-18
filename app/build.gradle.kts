@@ -23,6 +23,15 @@ android {
     }
 
     buildTypes {
+        getByName("release") {
+            isMinifyEnabled = true
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+        }
+        getByName("debug") {
+            isDebuggable = true
+            isMinifyEnabled = false
+            versionNameSuffix = "-debug"
+        }
     }
 
     compileOptions {
@@ -41,10 +50,6 @@ android {
 
 dependencies {
     implementation(Deps.KOTLIN)
-    implementation("androidx.appcompat:appcompat:1.1.0")
-    implementation("com.google.android.material:material:1.1.0")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlin_version"]}")
-    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
     addAndroidXDependencies()
     implementation(Deps.MATERIAL)
     addCoroutinesDependencies()

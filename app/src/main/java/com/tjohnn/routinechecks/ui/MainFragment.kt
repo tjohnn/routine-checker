@@ -17,7 +17,10 @@ import com.tjohnn.routinechecks.ui.nextup.NextUpFragment
 import com.tjohnn.routinechecks.ui.routines.RoutinesFragment
 import android.view.LayoutInflater as LayoutInflater1
 
-class MainFragment : BaseFragment() {
+class MainFragment : BaseFragment(),
+        RoutinesFragment.OnFragmentInteractionListener,
+        NextUpFragment.OnFragmentInteractionListener
+{
 
     lateinit var binding: FragmentMainBinding
     private lateinit var listener: OnFragmentInteractionListener
@@ -60,6 +63,10 @@ class MainFragment : BaseFragment() {
         }
     }
 
+    override fun onOpenRoutineDetail(id: Int) {
+        listener.onOpenRoutineDetail(id)
+    }
+
     companion object {
         const val TAG = "MainFragment"
         fun newInstance(): MainFragment {
@@ -73,6 +80,7 @@ class MainFragment : BaseFragment() {
 
     interface OnFragmentInteractionListener {
         fun onAddNewRoutine()
+        fun onOpenRoutineDetail(id: Int)
     }
 
 

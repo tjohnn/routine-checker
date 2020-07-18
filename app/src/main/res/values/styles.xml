@@ -1,0 +1,8 @@
+<resources>
+    <style name="TextFieldStyle">
+        <item name="android:background">@drawable/bg_text_field</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

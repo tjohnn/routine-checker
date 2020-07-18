@@ -1,7 +1,8 @@
 package routinechecks
 
 object Deps {
-    const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib:1.3.72"
+    private const val KOTLIN_VERSION = "1.3.72"
+    const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN_VERSION"
 
     private const val COROUTINES_VERSION = "1.3.7"
     const val KOTLINX_COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$COROUTINES_VERSION"

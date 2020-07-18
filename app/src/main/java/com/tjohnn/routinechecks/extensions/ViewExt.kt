@@ -2,6 +2,8 @@ package com.tjohnn.routinechecks.extensions
 
 import android.view.View
 import android.widget.EditText
+import android.widget.TextView
+import androidx.annotation.DrawableRes
 
 fun View.hide() {
     if(this.visibility == View.VISIBLE) {
@@ -31,4 +33,8 @@ fun EditText.updateText(text: String) {
     if (focused) {
         requestFocus()
     }
+}
+
+fun TextView.setDrawableStart(@DrawableRes drawable: Int) {
+    setCompoundDrawablesWithIntrinsicBounds(drawable, 0, 0, 0)
 }

@@ -7,6 +7,7 @@ import com.tjohnn.routinechecks.ui.MainActivity
 import com.tjohnn.routinechecks.ui.MainFragment
 import com.tjohnn.routinechecks.ui.addeditroutine.AddEditRoutineFragment
 import com.tjohnn.routinechecks.ui.nextup.NextUpFragment
+import com.tjohnn.routinechecks.ui.routinedetail.RoutineDetailFragment
 import com.tjohnn.routinechecks.ui.routines.RoutinesFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
@@ -31,6 +32,10 @@ interface MainActivityModule {
     @FragmentScoped
     @ContributesAndroidInjector
     fun addEditRoutineFragment(): AddEditRoutineFragment
+
+    @FragmentScoped
+    @ContributesAndroidInjector
+    fun addRoutineDetailFragment(): RoutineDetailFragment
 
 }
 

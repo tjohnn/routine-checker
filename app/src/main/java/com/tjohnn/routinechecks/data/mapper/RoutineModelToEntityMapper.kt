@@ -8,14 +8,16 @@ import javax.inject.Singleton
 
 @Singleton
 class RoutineModelToEntityMapper @Inject constructor() : Mapper<Routine, RoutineEntity> {
-    override suspend fun map(from: Routine) = RoutineEntity (
+    override fun map(from: Routine) = RoutineEntity (
         from.id,
         from.title,
         from.description,
-        from.nextCheckTime,
+        from.nextCheckTime.time,
         from.numberOfMissed,
         from.numberOfDone,
         from.frequency,
-        from.duration.durationValue
+        from.duration.durationValue,
+        from.isPending,
+        from.previousCheckTime.time
     )
 }

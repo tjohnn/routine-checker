@@ -3,7 +3,6 @@ package com.tjohnn.routinechecks.di
 import android.app.Application
 import com.tjohnn.routinechecks.App
 import com.tjohnn.routinechecks.di.viewmodelmodule.ViewModelModule
-import com.tjohnn.routinechecks.di.workermodule.WorkerBindingModule
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -13,8 +12,8 @@ import javax.inject.Singleton
 @Singleton
 @Component(modules = [
     AppModule::class, ActivityBindingModule::class,
-    AndroidSupportInjectionModule::class, ViewModelModule::class, RoomModule::class,
-    WorkerBindingModule::class
+    AndroidSupportInjectionModule::class, ViewModelModule::class,
+    RoomModule::class, ServiceBindingModule::class
 ])
 interface AppComponent : AndroidInjector<App> {
 

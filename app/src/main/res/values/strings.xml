@@ -4,4 +4,25 @@
     <string name="all">All</string>
     <string name="routines">Routines</string>
     <string name="new_routine">New Routine</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="frequency">Frequency</string>
+    <string name="save">Save</string>
+    <string name="title_is_required">Title is required</string>
+    <string name="description_is_required">Description is required</string>
+    <string name="please_set_frequency">Please set routine frequency</string>
+    <string name="scheduling">Scheduling</string>
+    <string name="setting_next_reminder">Setting next reminder</string>
+    <string name="next_routine">Next Routine</string>
+    <string name="next_routine_message">It\'s 5 minutes to your next routine: %1s</string>
+    <string name="today_at_x">Today at %s</string>
+    <string name="tomorrow_at_x">Tomorrow at %s</string>
+    <string name="routine_detail">Routine Detail</string>
+    <string name="done">Done</string>
+    <string name="good_job"><b>Good Job!</b> You have <b>over 70%</b></string>
+    <string name="bad_job">You have <b>less than 70%</b></string>
+    <string name="you_are_late_by">You are late by %s</string>
+    <string name="next_check_message">You have <b>​%s</b> more to the next routine check</string>
+    <string name="edit_routine">Edit Routine</string>
+    <string name="you_have_not_added_any_routine">You have not added any routine</string>
 </resources>
