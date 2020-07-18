@@ -24,8 +24,6 @@ class App : DaggerApplication() {
             Timber.plant(TimberTree())
         }
 
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-
     }
 
     override fun applicationInjector() = injector
